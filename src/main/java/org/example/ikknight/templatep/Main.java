@@ -3,9 +3,11 @@ package org.example.ikknight.templatep;
 import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
+import org.example.ikknight.templatep.commands.EnglishOrSpanish;
 import org.example.ikknight.templatep.commands.Reloadtp;
 import org.example.ikknight.templatep.commands.Say;
 import org.example.ikknight.templatep.listeners.PlayerJoin;
+import org.example.ikknight.templatep.listeners.PlayerMove;
 import org.example.ikknight.templatep.utils.Constants;
 
 import static org.example.ikknight.templatep.utils.BasicUtils.setPrefix;
@@ -18,7 +20,7 @@ public final class Main extends JavaPlugin {
         return pdfFile;
     }
 
-
+    public static boolean EOS = false;
 
     @Override
     public void onEnable() {
@@ -30,9 +32,11 @@ public final class Main extends JavaPlugin {
         // init command
         this.getCommand("tellme").setExecutor(new Say());
         this.getCommand("reloadtp").setExecutor(new Reloadtp(this));
+        this.getCommand("englishorspanish").setExecutor(new EnglishOrSpanish(this));
 
         // init listeners
         this.getServer().getPluginManager().registerEvents(new PlayerJoin(), this);
+        this.getServer().getPluginManager().registerEvents(new PlayerMove(),this);
         this.getLogger()
                 .info(this.pdfFile.getName() + " - Version " + this.pdfFile.getVersion() + " - has been enabled!");
     }
