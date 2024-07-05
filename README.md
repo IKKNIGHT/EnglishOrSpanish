@@ -18,7 +18,7 @@ This is a small Minecraft minigame that was inspired by the trend "English or Sp
 
 2. **Reloading Plugin Configuration**:
    - Use the `/reloadtp` command to reload the plugin's configuration.
-3. **Using The Comman**
+3. **Using The Command**
    - use the `/englishorspanish` OR `/eos` command to run the game 
 
 ### Example Configuration (PluginName / config.yml):
