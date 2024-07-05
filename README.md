@@ -1,9 +1,10 @@
-# Template Plugin for Spigot and CraftBukkit Servers
+# English or Spanish Minecraft plugin for Spigot and CraftBukkit Servers
 
 ## Version: 1.20.X
+ideally 1.20.6
 
 ### Description:
-This is a template plugin feel free to use this however you like. This plugin allows for easy customization of plugin message prefixes by modifying a config file. Additionally, it provides commands for reloading the plugin configuration and responding to custom commands.
+This is a small Minecraft minigame that was inspired by the trend "English or Spanish?" where the first person (player) to move gets consequences, in this instance a name change and a weakness effect (virtually forever)
 
 ### Features:
 - **Prefix Customization**: Change the prefix of all plugin messages to customize the server's communication style.
@@ -18,8 +19,6 @@ This is a template plugin feel free to use this however you like. This plugin al
 2. **Reloading Plugin Configuration**:
    - Use the `/reloadtp` command to reload the plugin's configuration.
 
-3. **Using Custom Command**:
-   - Utilize the `/tellme <message>` command to have the server respond with a specific message.
 
 ### Example Configuration (PluginName / config.yml):
 ```yaml
