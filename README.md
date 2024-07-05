@@ -18,11 +18,12 @@ This is a small Minecraft minigame that was inspired by the trend "English or Sp
 
 2. **Reloading Plugin Configuration**:
    - Use the `/reloadtp` command to reload the plugin's configuration.
-
+3. **Using The Comman**
+   - use the `/englishorspanish` OR `/eos` command to run the game 
 
 ### Example Configuration (PluginName / config.yml):
 ```yaml
-prefix: "&a[Server]&r " #< keep the space
+prefix: "&a[Server]&r " #< keep the space at the end
 ```
 ### Issues
-Having an error or question? go to the issues page and create an issue [here](https://github.com/IKKNIGHT/TemplatePluginSpigot/issues)
+Have an error or question? go to the issues page and create an issue [here](https://github.com/IKKNIGHT/EnglishOrSpanish/issues)
